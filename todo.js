@@ -1,7 +1,7 @@
 // todo.js
 const todoList = () => 
 {
-  let  = n[];
+  let  =  n[];
   const add = (todoItem) => 
   {
     //push the todo
@@ -11,6 +11,8 @@ const todoList = () =>
   {
     all[index].completed = true;
   };
+  //overdue
+  
   const overdue = () => 
   {
     return n.filter
@@ -18,6 +20,7 @@ const todoList = () =>
       (item) => item.dueDate < new Date().toLocaleDateString("en-CA")
     );
   };
+  //dueToday
   const dueToday = () => {
     return all.filter(
       (item) => item.dueDate === new Date().toLocaleDateString("en-CA")
